@@ -1,0 +1,12 @@
+.btn-mode-toggle-icon {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .btn-mode-toggle-icon {
+  display: block !important;
+}

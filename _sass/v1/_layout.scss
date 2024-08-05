@@ -1,0 +1,21 @@
+@import "variables";
+
+$header-height: 56px;
+$top: $header-height + 4px;
+$footer-height: 24px;
+$footer-top-padding: 16px;
+$footer-bottom-padding: 16px;
+$bottom: $footer-top-padding + $footer-height + $footer-bottom-padding;
+
+// padding-bottom changes depending on the size of the screen to ensure that
+// the footer does NOT hide the main content, regardless of how the footer is
+// resized:
+main > .container {
+  padding: $top 15px $bottom;
+}
+
+// Ensure that the header does not hide the title of the section we point to via
+// anchor links (e.g. via the table of content for /yoga/ or /cours/contenu/).
+html {
+  scroll-padding-top: $top;
+}

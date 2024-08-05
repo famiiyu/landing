@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}" class="h-100" data-bs-theme="auto">
+{%- include head.html -%}
+
+<body class="d-flex flex-column h-100">
+    {%- include mode-toggle.html -%}
+    {%- include header.html -%}
+    <main class="flex-shrink-0">
+        {{ content }}
+    </main>
+    {%- include footer.html -%}
+    {%- include js.html -%}
+</body>
+
+</html>

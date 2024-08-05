@@ -1,0 +1,7 @@
+---
+# This header (a.k.a. "front matter") triggers Jekyll's SCSS/Sass processing
+# of all the files stored under: ${PROJECT_DIR}/_sass/
+# Only dashes are enough, and only the main file needs a "front matter".
+---
+
+@import "v1"; // See also ${PROJECT_DIR}/_sass/v1.scss
