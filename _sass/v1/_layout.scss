@@ -1,7 +1,10 @@
 @import "variables";
 
 $header-height: 56px;
-$top: $header-height + 4px;
+$header-top-padding: 8px;
+$header-bottom-padding: 8px;
+$top: $header-top-padding + $header-height + $header-bottom-padding;
+
 $footer-height: 24px;
 $footer-top-padding: 16px;
 $footer-bottom-padding: 16px;
