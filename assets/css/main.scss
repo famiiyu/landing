@@ -6,28 +6,28 @@
 
 @import "v1"; // See also ${PROJECT_DIR}/_sass/v1.scss
 
-.top{
+.top {
   position: relative;
 }
 
-.top img{
+.top img {
   position: relative;
-	height: 50vh;
+  height: 50vh;
   width: 100%;
   object-fit: cover;
   opacity: 0.9;
 }
 
-.top p{
+.top p {
   position: absolute;
-  top:50%;
-  left:70%;
+  top: 50%;
+  left: 70%;
   color: rgb(87, 86, 86);
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-.pic img{
+.pic img {
   border-radius: 5%;
   width: 200px;
 }
