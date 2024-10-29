@@ -2,30 +2,9 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="{{ '/assets/img/famiiyu_logo_white.svg' | relative_url }}" alt="Famiiyu logo" height="30px" />
+            <a class="navbar-brand" href="/"></a>
+              <img src="{{ '/assets/img/famiiyu_logo_white.svg' | relative_url }}" alt="Famiiyu logo" height="50px"/>
             </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#div-navbar-collapse"
-                aria-controls="div-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="div-navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    {%- assign pages = site.pages | where: "type", "page" | sort: "order" -%}
-                    {%- for p in pages -%}
-                    <li class="nav-item">
-                        {%- if p.title == page.title -%}
-                        <a class="nav-link active" aria-current="page" href="{{ p.url | relative_url }}">{{ p.title |
-                            escape }}</a>
-                        {%- else -%}
-                        <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>
-                        {%- endif -%}
-                    </li>
-                    {%- endfor -%}
-                </ul>
-            </div>
         </div>
     </nav>
 </header>
