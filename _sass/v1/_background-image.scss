@@ -1,0 +1,52 @@
+@import "variables";
+
+// SVG filter calculated with: https://angel-rs.github.io/css-color-filter-generator/
+.filter-bs-heading {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(1%) saturate(2199%)
+    hue-rotate(6deg) brightness(96%) contrast(89%);
+}
+
+.top {
+  position: relative;
+}
+
+.top-bg-img {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.top-content {
+  position: absolute;
+  color: var(--bs-heading-color);
+  padding: 0;
+  margin: 0;
+  // The content is placed slightly differently based on the screen size, so
+  // that it is always readable and so that the end results always looks good.
+  @media (min-width: $xs) {
+    top: 58%;
+    left: 57%;
+  }
+  @media (min-width: $sm) {
+    top: 58%;
+    left: 60%;
+  }
+  @media (min-width: $md) {
+    top: 55%;
+    left: 65%;
+  }
+  @media (min-width: $lg) {
+    top: 58%;
+    left: 70%;
+  }
+  @media (min-width: $xl) {
+    top: 58%;
+    left: 70%;
+  }
+  @media (min-width: $xxl) {
+    top: 60%;
+    left: 70%;
+  }
+}
